@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+	<script>
+		function sendmail(){
+			document.getElementById("rmessage").innerHTML = "Mail Sent Successfully";
+		}
+		</script>
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <p>This page contains contact information.</p>
+
+    <!-- Navigation Links -->
+    <a href="home.html" id="homeLink">Go to Home Page</a>
+    <a href="about.html" id="aboutLink">Go to About Page</a>
+
+    <!-- Contact Form -->
+    <h2>Contact Form</h2>
+
+        <input type="text" id="name" placeholder="Your Name" required><br><br>
+        <input type="email" id="email" placeholder="Your Email" required><br><br>
+        <textarea id="message" placeholder="Your Message" required></textarea><br><br>
+        <button id="submitButton" onclick="sendmail()">Send Message</button>
+  
+	<div id="rmessage"></div>
+
+</body>
+</html>

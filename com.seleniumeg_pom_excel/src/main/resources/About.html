@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+	<script>
+		function showmore(){
+			document.getElementById("moreInfo").innerHTML = "We are a small but growing company focused on providing the best services to our customers.";
+		}
+	</script>
+</head>
+<body>
+    <h1>About Us</h1>
+    <p>This page contains information about our website.</p>
+
+    <!-- Navigation Links -->
+    <a href="home.html" id="homeLink">Go to Home Page</a>
+    <a href="contact.html" id="contactLink">Go to Contact Page</a>
+
+    <!-- Contact Info Section -->
+    <h2>Contact Information</h2>
+    <p>Phone: +1 234 567 890</p>
+    <p>Email: contact@ourwebsite.com</p>
+
+    <!-- Button to toggle more info -->
+    <button id="moreInfoButton" onclick="showmore()">Show More Info</button>
+    <div id="moreInfo">    </div>
+</body>
+</html>
